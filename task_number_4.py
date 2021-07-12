@@ -8,7 +8,6 @@ def task_4():
     while amount_of_added_numbers > 0:
         list_1.append(random.randrange(0, 100))
         amount_of_added_numbers -= 1
-    print(list_1)
     amount_of_odd_numbers = 0
     for i, element in enumerate(list_1):
         if element % 2 != 0:
@@ -16,7 +15,6 @@ def task_4():
             amount_of_odd_numbers += 1
         else:
             continue
-    print(list_1)
     return amount_of_odd_numbers
 
 

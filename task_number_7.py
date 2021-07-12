@@ -4,17 +4,15 @@ import datetime
 
 print('Enter day, month, year in the format: dd.mm.yyyy')
 input_d_m_y = input('Enter the day: ')
-conv_valid_time = 0
 
 
-def is_date(conv_valid_time):
+def is_date(input_d_m_y):
     try:
         valid_time = datetime.datetime.strptime(input_d_m_y, '%d.%m.%Y')
         conv_valid_time = bool(valid_time.strftime('%d.%m.%Y'))
-        print(conv_valid_time)
+        return conv_valid_time
     except:
-        print(bool(conv_valid_time))
-    return
+        return False
 
 
-is_date(conv_valid_time)
+print(is_date(input_d_m_y))

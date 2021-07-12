@@ -12,11 +12,11 @@ def is_prime(user_input):
             if perebor == 0:
                 number_of_attempts += 1
         if number_of_attempts > 2:
-            print('False')
+            return False
         else:
-            print('True')
+            return True
     else:
-        print('False')
+        return False
 
 
-is_prime(user_input())
+print(is_prime(user_input()))

@@ -1,11 +1,14 @@
 # Задание №2 - сделано
-def task_2():
-    entered_1 = input('Enter some words: ')
-    amount_element = len(entered_1)
-    amount_words = len(entered_1.split())
-    # print(amount_element)
-    # print(amount_words)
-    return amount_words, amount_element
+u_input = input('Enter some text: ')
 
 
-print('Amount of words, elements: ', task_2())
+def amount_words(user_input):
+    user_input = len(user_input.split())
+    return user_input
+
+
+def amount_elements(user_input):
+    return len(user_input)
+
+
+print('Amount of words, elements: ', amount_words(u_input), amount_elements(u_input))
